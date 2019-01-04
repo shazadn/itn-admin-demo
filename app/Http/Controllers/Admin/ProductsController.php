@@ -17,7 +17,7 @@ class ProductsController extends Controller
      */
     public function products(): View
     {
-        return view('admin.auth.products', ['products' => array_merge(
+        return view('admin.products', ['products' => array_merge(
             (new ApiP1())->getResponse(),
             (new ApiP2())->getResponse()
         )]);

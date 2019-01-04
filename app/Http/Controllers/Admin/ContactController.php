@@ -15,7 +15,7 @@ class ContactController extends Controller
     public function contact()
     {
         
-        return view('admin.auth.contact');
+        return view('admin.contact');
     }
 
     

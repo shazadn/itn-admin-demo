@@ -11,7 +11,7 @@ class GalleryController extends Controller
 
     public function gallery()
     {
-        return view('admin.auth.gallery', ['images' => Gallery::all()]);
+        return view('admin.gallery', ['images' => Gallery::all()]);
     }
 
     public function upload(Request $request)
