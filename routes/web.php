@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'PageController@index')->name('home');
-Route::post('/', 'PageController@submitContactForm')->name('submit.contact.form');
+//Route::get('/', 'PageController@index')->name('home');
+//Route::post('/', 'PageController@submitContactForm')->name('submit.contact.form');

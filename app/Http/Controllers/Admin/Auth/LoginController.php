@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class LoginController extends Controller
 {
@@ -37,6 +38,16 @@ class LoginController extends Controller
     {
         $this->redirectTo = route('view.user');
         $this->middleware('guest')->except('logout');
+    }
+    
+    /**
+     * Show the application's login form.
+     *
+     * @return View
+     */
+    public function showLoginForm()
+    {
+        return view('admin.auth.login');
     }
     
     /**
